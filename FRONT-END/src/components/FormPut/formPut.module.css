@@ -1,0 +1,47 @@
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form {
+    background-color: rgb(236, 184, 89);
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.input {
+    width: 300px;
+    margin: 15px 0 15px 0;
+}
+
+.select {
+    background-color: rgb(243, 243, 65);
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select:hover {
+    transform: scale(1.2);
+}
+
+.button {
+    background-color: rgb(243, 243, 65);
+    height: 50px;
+    width: 160px;
+    padding: 5px;
+    margin: 10px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}

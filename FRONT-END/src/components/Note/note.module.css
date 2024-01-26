@@ -1,0 +1,26 @@
+.div {
+    background-color: palevioletred;
+    padding: 10px 0 10px 0;
+    margin: 5px 500px 5px 500px;
+    width: auto;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.h3 {
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}

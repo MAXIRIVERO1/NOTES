@@ -6,13 +6,13 @@
 }
 
 .form {
-    background-color: rgb(236, 184, 89);
+    background-color: rgba(236, 184, 89, 0.5);
     padding: 100px;
     border-radius: 10px;
 }
 
 .button {
-    background-color: rgb(243, 243, 65);
+    background-color: rgba(243, 243, 65, 0.463);
     height: 50px;
     width: 160px;
     padding: 5px;
@@ -20,4 +20,7 @@
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
+}
+button:hover {
+    transform: scale(1.2);
 }

@@ -6,7 +6,7 @@
 }
 
 .form {
-    background-color: rgb(236, 184, 89);
+    background-color: rgba(236, 184, 89, 0.5);
     padding: 100px;
     border-radius: 10px;
 }
@@ -17,7 +17,7 @@
 }
 
 .select {
-    background-color: rgb(243, 243, 65);
+    background-color: rgba(243, 243, 65, 0.463);
     height: 30px;
     width: 300px;
     padding: 5px;
@@ -32,7 +32,7 @@
 }
 
 .button {
-    background-color: rgb(243, 243, 65);
+    background-color: rgba(243, 243, 65, 0.463);
     height: 50px;
     width: 160px;
     padding: 5px;

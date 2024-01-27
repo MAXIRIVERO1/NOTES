@@ -1,12 +1,12 @@
 .div {
-    background-color: rgb(236, 184, 89);
+    background-color: rgba(236, 184, 89, 0.5);
     margin: 100px 500px 0 500px;
     padding: 70px 0 70px 0;
     border-radius: 10px;
 }
 
 .button {
-    background-color: rgb(243, 243, 65);
+    background-color: rgba(243, 243, 65, 0.463);
     height: 50px;
     width: 160px;
     padding: 5px;

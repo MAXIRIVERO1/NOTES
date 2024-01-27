@@ -3,7 +3,7 @@
 }
 
 .button {
-    background-color: rgb(243, 243, 65);
+    background-color: rgba(243, 243, 65, 0.463);
     height: 50px;
     width: 200px;
     padding: 5px;

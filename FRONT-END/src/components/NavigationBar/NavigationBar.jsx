@@ -16,6 +16,7 @@ function NavigationBar() {
     }
     return (
         <div className={style.div}>
+            <h2 className={style.h2}>MY NOTES</h2>
             { pathname !== "/home" ? 
             <Link to={"/home"}><button className={style.button}>Home</button></Link> : 
             null }

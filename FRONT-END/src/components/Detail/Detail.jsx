@@ -22,7 +22,7 @@ function Detail() {
     const note = useSelector((state) => state.detail)
     const handleDelete = async(id) => {
         try {
-            await axios.delete(`http://localhost:3001/notes/delete/${id}`)
+            await axios.delete(`https://notes-xm7v.onrender.com/notes/delete/${id}`)
             dispatch(deleteNote(id))
             Swal.fire({
                 title: "Deleted",

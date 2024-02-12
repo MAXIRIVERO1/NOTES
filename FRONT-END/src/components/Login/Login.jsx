@@ -20,14 +20,16 @@ function Login() {
             ...user,
             [e.target.name] : e.target.value
         })
+        console.log("user: ",user)
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log("user: ",user)
         user.email === objUser.email && user.password === objUser.password ? 
         dispatch(getAccess(true)) :
         dispatch(getAccess(false));
-        setUser({})
+        setUser({...user, password: ""})
         user.email === objUser.email && user.password === objUser.password ?
         navigate("/home") :
         Swal.fire({
@@ -38,6 +40,14 @@ function Login() {
         })
         
     }
+    const handleInfo = () => {
+        Swal.fire({
+            title: "Access",
+            text: "email: accessEmail@gmail.com, password: 1234access",
+            icon: "info",
+            confirmButtonText: "OK"
+        })
+    }
     return (
         <div className={style.div}>
             <form onSubmit={handleSubmit} className={style.form}>
@@ -45,7 +55,8 @@ function Login() {
                 <input type="text" value={user.email} name="email" onChange={handleChange} required/><br />
                 <label htmlFor="">Password :</label><br />
                 <input type="password" value={user.password} name="password" onChange={handleChange} required/><br />
-                <button type='submit' className={style.button}>ENTER</button>
+                <button type='submit' className={style.button}>ENTER</button><br />
+                <button type="button" className={style.button} onClick={handleInfo}>Access?</button>
             </form>
         </div>
     )

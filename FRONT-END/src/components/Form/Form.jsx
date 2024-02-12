@@ -26,7 +26,7 @@ function Form() {
   const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-        const { data } = await axios.post(`http://localhost:3001/notes/create`, formData);
+        const { data } = await axios.post(`https://notes-xm7v.onrender.com/notes/create`, formData);
         const { id } = data;
         Swal.fire({
             title: "Perfect",

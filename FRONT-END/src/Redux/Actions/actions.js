@@ -15,7 +15,7 @@ export const FILTER_STATUS = "FILTER_STATUS";
 export const getNotes = ()=> {
     return async(dispatch)=>{
         try {
-            const { data } = await axios.get("http://localhost:3001/notes/get")
+            const { data } = await axios.get("https://notes-xm7v.onrender.com/notes/get")
             return await dispatch({
                 type : GET_NOTES,
                 payload : data
@@ -29,7 +29,7 @@ export const getNotes = ()=> {
 export const getDetail = ( id ) => {
     return async(dispatch)=>{
         try {
-            const { data } = await axios.get(`http://localhost:3001/notes/detail/${id}`)
+            const { data } = await axios.get(`https://notes-xm7v.onrender.com/notes/detail/${id}`)
             return await dispatch({
                 type : GET_DETAIL,
                 payload : data
@@ -52,7 +52,7 @@ export const clearDetail = () => {
 export const addArch = (id) => {
     return async(dispatch)=>{
         try {
-            const { data } = await axios.get(`http://localhost:3001/notes/detail/${id}`)
+            const { data } = await axios.get(`https://notes-xm7v.onrender.com/notes/detail/${id}`)
             return await dispatch({
                 type : ADD_ARCH,
                 payload : data

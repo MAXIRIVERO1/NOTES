@@ -19,7 +19,7 @@ function FormPut() {
     useEffect(()=>{
         const fetching = async()=>{
             try {
-                const { data } = await axios.get(`http://localhost:3001/notes/detail/${id}`)
+                const { data } = await axios.get(`https://notes-xm7v.onrender.com/notes/detail/${id}`)
                 setNote(data)
             } catch (error) {
                 console.error("error fetching note to edit: ", error)
@@ -40,7 +40,7 @@ function FormPut() {
     const handleSubmit = async(e) => {
         e.preventDefault()
         try {
-            await axios.put(`http://localhost:3001/notes/put/${id}`, formData)
+            await axios.put(`https://notes-xm7v.onrender.com/notes/put/${id}`, formData)
             Swal.fire({
                 title: "Updated",
                 text: "Note updated successfully",

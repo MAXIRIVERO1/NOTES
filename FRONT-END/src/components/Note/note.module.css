@@ -24,3 +24,9 @@
     font-size: 25px;
     cursor: pointer;
 }
+
+@media (max-width: 384px) {
+    .div {
+        margin: 10px 15px 20px 15px;
+    }
+}

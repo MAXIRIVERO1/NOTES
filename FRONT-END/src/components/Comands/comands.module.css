@@ -16,7 +16,7 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 384px) {
+@media (max-width: 768px) {
     .button {
         width: 320px;
         margin: 2px;

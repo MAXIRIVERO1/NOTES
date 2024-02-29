@@ -45,3 +45,14 @@
 .button:hover {
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 768px) {
+    .div {
+        height: auto;
+    }
+
+    .form {
+        padding: 30px;
+        margin-top: 50px;
+    }
+}
